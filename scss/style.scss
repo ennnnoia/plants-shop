@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+$ne: none;
+$blcolor:#156963;
+@mixin font_g($weight, $size, $height) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+.verh {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 140px;
+    min-height: 740px;
+    justify-content: space-between;
+    &__levo {
+        width: 40%;
+    }
+    &__img {width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__pravo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 55%;
+        padding-top: 40px;
+    }
+    &__nav{
+        margin-right: 56px;
+        margin-bottom: 110px;
+    }
+    .nav {
+        align-self: flex-end;
+        min-width: 271px;
+        margin-right: 56px;
+        display: flex;
+        flex-direction: row;
+		&__icon {margin-right: 3px;
+		}
+        &__sign{display: flex;
+            flex-direction: row;
+        }
+		&__signup {font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 143%;
+            text-align: center;
+            color: $blcolor;
+            
+            &_color {color: #FFFFFF;
+            }
+		}
+		&__but {padding: 8px 20px;
+            width: 111px;
+            height: 36px;
+            border: 0px;
+            background: #FFFFFF;
+
+		    &_color {background: $blcolor;
+		    }
+        }
+}
+
+    
+.block-text {
+    align-self: flex-start;
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    &__h2 {@include font_g(500, 68px, 83px);
+        color: $blcolor; 
+        margin-bottom: 24px;       
+    }
+    &__p {padding-right: 3%;
+        @include font_g(400, 18px, 178%);
+        color: #2C1500;
+        opacity: 0.8;
+    }
+}
+    &__buttonn{display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        align-items: flex-end;
+        min-width: 100%;
+    }
+    &__button {display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 39px 49px;
+        border: 0px;
+        &_color {background: $blcolor;
+        }
+    }
+	&__buttonfl {display: flex;
+        flex-direction: row;
+        margin-bottom: 12px;
+	}
+    &__button-img {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    &__p {@include font_g(500, 24px, 29px);
+        color: #333333;
+
+        &_color {color: #F2F2F2;
+            }
+    }
+    &__h3 {@include font_g(500, 32px, 39px);
+        color: $blcolor;
+
+        &_color {color: #FFFFFF;
+            }
+    }
+}
+
+
+
+.container{
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+.kart-icon {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 46px;
+    justify-content: center;
+
+    &__kart{
+        display: flex;
+        flex-direction: column;
+        margin-right: 32px;
+        padding: 16px 22px;
+        border: 1px solid #E0E0E0;;
+    }
+    &__kart:last-child{
+        margin-right: 0px;
+    }
+    &__vv{display: flex;
+        flex-direction: row;
+        margin-bottom: 16px;
+        width: 60%;
+    }
+    &__img{
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+    &__h2 {@include font_g(700, 16px, 150%);
+        color: $blcolor;
+    }
+    &__p {
+        @include font_g(400, 10px, 160%);
+        color: #2C1500;
+    }
+}
+
+
+.plant-icon {display: flex;
+    flex-direction: row;
+    margin-bottom: 88px;
+    justify-content: center;
+
+    &__kart {display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        //margin-right: 20px;
+    }
+    &__kart:last-child{
+        margin-right: 0px;
+    }
+    &__img {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    &__p {@include font_g(400, 16px, 20px);
+        text-align: center;
+        color: #000000;  
+        margin-bottom: 8px;      
+    }
+    &__h3 {@include font_g(600, 16px, 20px);
+        text-align: center;
+        color: #000000;
+    }
+}
+
+
+.niz {display: flex;
+    flex-direction: row;
+    margin-bottom: 52px;
+    justify-content: space-between;
+
+    &__levo {display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+    }
+    &__block-txt {width: 90%;
+    }
+    &__img1 {width: 100%;
+        margin-top: 100px;
+    }
+    &__pravo {width: 45%;
+    }
+    &__img2 {height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.txt {
+    &__h2 {@include font_g(700, 40px, 140%);
+        color: #2C1500;
+        margin-bottom: 16px;
+    }
+    &__p {@include font_g(400, 16px, 175%);
+        color: #2C1500;
+        opacity: 0.8;
+    }
+}
+
+
+.menu {display: flex;
+    flex-direction: row;
+    border-top: 1px solid $blcolor;
+    margin-bottom: 70px;
+    padding-top: 60px;
+    padding-left: 106px;
+    padding-right: 90px;
+    margin: 0 auto;
+
+    &__1sec {display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-right: 80px;
+        margin-bottom: 70px;
+    }
+    &__h1 {font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $blcolor;  
+        margin-bottom: 24px;      
+    }
+    &__h3 {font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+    &__p1 {font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #4F4F4F;   
+    }
+    &__2sec {display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+    &__h2 {font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    &__p {font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        margin-right: 80px;
+        margin-bottom: 14px;
+    }
+    &__3sec {display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+    &__p2{font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        opacity: 0.5;
+    }
+    &__but {display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 12px;
+        gap: 10px;
+        width: 51px;
+        height: 22px;
+        background: $blcolor;
+        backdrop-filter: blur(5px);
+        border-radius: 2px;
+        border: 0px;
+
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;        
+    }
+}
+
+
+
+
+@media (max-width: 1170px) {
+    .verh {margin-bottom: 100px;
+        //min-height: 740px;
+        &__pravo {
+        padding-top: 30px;
+        }
+        &__nav{
+        margin-right: 56px;
+        margin-bottom: 80px;
+        }
+        .nav {
+            &__signup {font-size: 14px;
+                line-height: 143%;
+            }
+            &__but {padding: 8px 20px;
+                width: 111px;
+                height: 36px;
+            }
+        }    
+    .block-text {
+        margin-bottom: 8%;
+        &__h2 {@include font_g(500, 50px, 60px);
+            margin-bottom: 24px;       
+        }
+        &__p {@include font_g(400, 14px, 178%);
+        }
+    }
+        &__button {padding: 39px 49px;
+        }
+        &__buttonfl {margin-bottom: 12px;
+        }
+        &__button-img {margin-left: 8px;
+        margin-right: 8px;
+        }
+        &__p {@include font_g(500, 20px, 29px);
+        }
+        &__h3 {@include font_g(500, 24px, 39px);
+        }
+}
+}       
+
+@media (max-width: 970px) {
+    .verh{
+        &__button {padding: 20px 30px;
+        }
+        &__buttonfl {margin-bottom: 10px;
+        }
+        &__button-img {margin-left: 8px;
+        margin-right: 8px;
+        }
+        &__p {@include font_g(500, 18px, 29px);
+        }
+        &__h3 {@include font_g(500, 22px, 39px);
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .verh{
+        &__button {padding: 20px 30px;
+        }
+        &__buttonfl {margin-bottom: 10px;
+        }
+        &__button-img {margin-left: 8px;
+        margin-right: 8px;
+        }
+        &__p {@include font_g(500, 16px, 20px);
+        }
+        &__h3 {@include font_g(500, 20px, 30px);
+        }
+        .nav {
+            min-width: 251px;
+        }
+        .block-text {
+            margin-bottom: 8%;
+            &__h2 {@include font_g(500, 40px, 50px);
+                margin-bottom: 20px;       
+            }
+            &__p {@include font_g(400, 14px, 158%);
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .verh{
+        &__levo{display: $ne;}
+        &__icon {height: 0px;}
+        &__pravo{align-items: center;
+            width: 100%;
+            padding-top: 20px;}
+    }
+}
